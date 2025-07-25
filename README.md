@@ -1,21 +1,17 @@
-BOE Document Extraction Using BERT Model
-
-This repository contains the implementation of a machine learning model designed to extract specific fields from Bill of Entry (BOE) documents using the BERT model. The model is fine-tuned on a custom dataset tailored for BOE document extraction tasks.
+Document Field Extraction Using BERT Model
+This repository contains the implementation of a machine learning model designed to extract specific fields from scanned documents using the BERT model. The model is fine-tuned on a custom dataset tailored for document field extraction tasks.
 
 Introduction
-Bill of Entry (BOE) documents are critical in international trade and customs processes, containing structured and semi-structured data. This repository focuses on using a fine-tuned BERT model to extract fields like Importer Name, HS Code, Invoice Number, Custom Duty, and more from BOE documents.
+Documents in various industries (like trade, customs, finance, etc.) often contain structured and semi-structured data. This repository focuses on using a fine-tuned BERT model to extract fields like Importer Name, HS Code, Invoice Number, Custom Duty, and more.
 
 Features
-Custom Dataset Support: Designed for domain-specific BOE document data.
+Custom Dataset Support: Designed for domain-specific document data.
+
 Preprocessing Pipeline: Includes text cleaning, OCR integration, and dynamic field mapping.
+
 High Accuracy Extraction: Uses BERT’s robust language understanding for precise field identification.
-Extensibility: Modular design to accommodate additional fields or custom document types.
-Dataset
-The model is trained and evaluated on a custom-labeled BOE dataset. Each dataset entry includes:
 
-Images: Scanned BOE document images.
-Labels: JSON annotations specifying the target fields and values.
-
+Extensibility: Modular design to accommodate additional fields or document types.
 dataset/
 |-- images/
 |-- latest/
